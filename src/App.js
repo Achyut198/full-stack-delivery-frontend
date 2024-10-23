@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import ComponentForm from './components/ComponentForm';
+import RevenueGraph from './components/RevenueGraph';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Vehicle Service Management System</h1>
+      <ComponentForm />
+      <RevenueGraph />
     </div>
   );
-}
+};
 
 export default App;
